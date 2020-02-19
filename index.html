@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    WARNING! Make sure that you match all Quasar related
+    tags to the same version! (Below it's "@1.9.3")
+  -->
+
+  <head>
+    <title>Memes - Ein Phänomen</title>
+    <link href="quasar/iconscss.css" rel="stylesheet" type="text/css">
+    <link href="quasar/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="quasar/quasar.min.css" rel="stylesheet" type="text/css">
+</head>
+
+
+  <body>
+    <!-- Add the following at the end of your body tag -->
+    <div id="q-app">
+        <q-layout view="hHh lpR fFf">
+        <div style="margin-top: 100px">
+            <h3 class="text-center text-weight-bold">Memes - Ein Phänomen</h3>
+            <div class="text-center text-subtitle1">
+                Seit der Entstehung des Internets sind Memes verbreiteter den je, erfahrt wie es dazu kam und was dieses Format ausmacht.
+            </div>
+        </div>
+        <div class="row q-col-gutter-lg align-center justify-center justify-around" style="height: 100%; margin-top: 100px">
+            <div class="col-sm-12 col-lg-4">
+                <q-card color="cursor-pointer bg-dar" v-ripple style="height: 370px">
+                    <div class="column justify-center" style="height: 100%; background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url('assets/aliens.jpg')">
+                        <h3 class="text-center">
+                            Geschichte
+                        </h3>
+                        <q-btn outline flat>Mehr Erfahren</q-btn>
+                    </div>
+                </q-card>
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+                <q-card color="cursor-pointer bg-dar" v-ripple style="height: 370px">
+                    <div class="column justify-center" style="height: 100%; background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url('assets/philiosaurus.jpg')">
+                        <h3 class="text-center">
+                            Was ist ein Meme?
+                        </h3>
+                        <q-btn outline flat>Mehr Erfahren</q-btn>
+                    </div>
+                </q-card>
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+                <q-card color="cursor-pointer bg-dar" v-ripple style="height: 370px; width: 100%">
+                    <div class="column justify-center" style="width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url('assets/stonks.jpg');">
+                        <h3 class="text-center">
+                            Trends
+                        </h3>
+                        <q-btn outline flat>Mehr Erfahren</q-btn>
+                    </div>
+                </q-card>
+            </div>
+
+        </div>
+
+        <q-footer bordered class="bg-dark text-primary">
+            <q-tabs no-caps active-color="primary" indicator-color="transparent" class="text-grey" v-model="tab">
+              <q-tab name="geschichte" label="Geschichte"></q-tab>
+              <q-tab name="erklaerung" label="Erklärung"></q-tab>
+              <q-tab name="index" icon="home"></q-tab>
+              <q-tab name="trends" label="Trends"></q-tab>
+              <q-tab name="about" label="Über Uns"></q-tab>
+            </q-tabs>
+          </q-footer>
+    </q-layout>
+    </div>
+    
+    <script>
+    window.quasarConfig = {
+      dark: true
+    }
+    </script>
+
+    <script src="quasar/vue.min.js"></script>
+    <script src="quasar/quasar.umd.min.js"></script>
+    
+    <script>
+      /*
+        Example kicking off the UI. Obviously, adapt this to your specific needs.
+        Assumes you have a <div id="q-app"></div> in your <body> above
+       */
+      new Vue({
+        el: '#q-app',
+        data: function () {
+          return {
+              tab: 'index'
+          }
+        },
+        watch: {
+            tab (val) {
+                window.location.href=val + '.html';
+            }
+        }
+      })
+    </script>
+  </body>
+</html>

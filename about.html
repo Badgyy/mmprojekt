@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    WARNING! Make sure that you match all Quasar related
+    tags to the same version! (Below it's "@1.9.3")
+  -->
+
+  <head>
+    <title>Memes - Ein Phänomen</title>
+    <link href="quasar/iconscss.css" rel="stylesheet" type="text/css">
+    <link href="quasar/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="quasar/quasar.min.css" rel="stylesheet" type="text/css">
+</head>
+
+
+  <body>
+    <!-- Add the following at the end of your body tag -->
+    <div id="q-app">
+        <q-layout view="hHh lpR fFf">
+            <h3>Über Uns</h3>
+        <q-footer bordered class="bg-dark text-primary">
+            <q-tabs no-caps active-color="primary" indicator-color="transparent" class="text-grey" v-model="tab">
+              <q-tab name="geschichte" label="Geschichte"></q-tab>
+              <q-tab name="erklaerung" label="Erklärung"></q-tab>
+              <q-tab name="index" icon="home"></q-tab>
+              <q-tab name="trends" label="Trends"></q-tab>
+              <q-tab name="about" label="Über Uns"></q-tab>
+            </q-tabs>
+          </q-footer>
+    </q-layout>
+    </div>
+    
+    <script>
+    window.quasarConfig = {
+      dark: true
+    }
+    </script>
+
+    <script src="quasar/vue.min.js"></script>
+    <script src="quasar/quasar.umd.min.js"></script>
+    
+    <script>
+      /*
+        Example kicking off the UI. Obviously, adapt this to your specific needs.
+        Assumes you have a <div id="q-app"></div> in your <body> above
+       */
+      new Vue({
+        el: '#q-app',
+        data: function () {
+          return {
+              tab: 'about'
+          }
+        },
+        watch: {
+            tab (val) {
+                window.location.href=val + '.html';
+            }
+        }
+      })
+    </script>
+  </body>
+</html>

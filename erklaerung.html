@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    WARNING! Make sure that you match all Quasar related
+    tags to the same version! (Below it's "@1.9.3")
+  -->
+
+  <head>
+    <title>Erklärung | Memes - Ein Phänomen</title>
+    <link href="quasar/iconscss.css" rel="stylesheet" type="text/css">
+    <link href="quasar/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="quasar/quasar.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+  <body>
+    <!-- Add the following at the end of your body tag -->
+    <div id="q-app">
+        <q-layout view="hHh lpR fFf">
+            <div class="row justify-center">
+              <div class="col-5">
+                <h4 class="q-mb-sm">Was ist ein Meme?</h4>
+<p>
+Memes, wie wir Sie hier thematisieren, sind ein Internet-Phänomen, bei dem sich einen Inhalt blitzschnell und 
+massenhaft ueber das Internet verbreitet. Dazu traegt meist Humor als Basiskomponente dieses Inhalts bei.
+Ein lebendiger und mutierender Running Gag auf globalem Level.
+Ein Meme will andere zum lachen bringen
+Je mehr ein Meme leute zum lachen bringt,
+umso mehr wird es geteilt und umso mehr
+breitete sich aus.
+</p>
+<p>
+Memes und Internet sind füreinander geschaffen. Nicht, weil sie digitale visuelle Kommunikation sind (obwohl sie das natürlich sind),
+sondern weil sie das Produkt eines Schwarms sind. Sie sind die Kurzform einer hyper-verbundenen Gruppe. 
+Dieser "Web Hive Mind" ist ein seltsamer (oft lustiger, manchmal gefährlicher) Ort.
+</p>
+
+<h4 class="q-mb-sm">Woher kommt der Begriff "Meme"?</h4>
+<p>
+Der Begriff "Mem" stammt vom Evolutionsbiologen Richard Dawkins. Dawkins prägte den Begriff 1976 in seinem Buch The Selfish Gene, lange vor dem modernen Internet, 
+bevor Meme zu dem wurden, was sie heute sind, "Memes". Für Dawkins waren kulturelle Ideen nicht anders als Gen-Konzepte,
+die sich so schnell wie möglich von Gehirn zu Gehirn ausbreiten mussten und sich dabei replizieren und mutieren mussten. 
+Er nannte diese Artefakte Meme, Bits der kulturellen DNA, die die gemeinsamen Erfahrungen der Gesellschaft kodierten und 
+sich gleichzeitig ständig weiterentwickelten.
+</p>
+<p>
+Damals sprach Dawkins von der Weitergabe von Kultur, Gesangsmelodien, Kunststilen.
+Heute betrachten die Internet-Bürger Memes als Witze, die über die sozialen Medien in Form von Bildmakros 
+Hashtags,
+GIFs 
+oder Videos weitergegeben werden.
+</p>
+
+<h4 class="q-mb-sm">Nochmal</h4>
+
+<p>
+Ein Meme will andere zum lachen bringen
+Je mehr ein Meme leute zum lachen bringt,
+umso mehr wird es geteilt und umso mehr
+breitete sich aus. Einige memes sind zu
+wahren klassikern geworden.
+</p>
+<p>Entdecke auf dieser Seite mehr über die <a href="geschichte.html">Geschichte</a> und Eigenschaften des Phaenomens, Internet-Memes
+und natürlich tonnenweise Beispiele.</p>
+
+              </div>
+            </div>
+
+        <q-footer bordered class="bg-dark text-primary">
+            <q-tabs no-caps active-color="primary" indicator-color="transparent" class="text-grey" v-model="tab">
+              <q-tab name="geschichte" label="Geschichte"></q-tab>
+              <q-tab name="erklaerung" label="Erklärung"></q-tab>
+              <q-tab name="index" icon="home"></q-tab>
+              <q-tab name="trends" label="Trends"></q-tab>
+              <q-tab name="about" label="Über Uns"></q-tab>
+            </q-tabs>
+          </q-footer>
+    </q-layout>
+    </div>
+    
+    <script>
+    window.quasarConfig = {
+      dark: true
+    }
+    </script>
+
+<script src="quasar/vue.min.js"></script>
+<script src="quasar/quasar.umd.min.js"></script>
+    
+    <script>
+      /*
+        Example kicking off the UI. Obviously, adapt this to your specific needs.
+        Assumes you have a <div id="q-app"></div> in your <body> above
+       */
+      new Vue({
+        el: '#q-app',
+        data: function () {
+          return {
+              tab: 'erklaerung'
+          }
+        },
+        watch: {
+            tab (val) {
+                window.location.href=val + '.html';
+            }
+        }
+      })
+    </script>
+  </body>
+</html>
