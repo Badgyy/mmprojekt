@@ -1,0 +1,15 @@
+Technische:
+
+Wir haben uns für die Nutzung des Quasar Frameworks entschieden.
+Dies ist ein Framework welches über vue.js liegt. vue.js ist ein JS Framework zum erstellen von Interaktiven Web Sites mithilfe von Components.
+Normalerweise nutzt man im besten Fall für solche Projekte ein Webpack Projekt, aber zur einfachereren Nutzung in den Computerpools haben wir uns für eine UMD einbindung entschieden.
+Das heißt wir haben für jede Unterseite einzelne .html Dateien erstellt und dann die Skripte des Frameworks eingebungen.
+
+
+Das Framework bringt zudem eine Menge von Material Design 2.0 spezifizierten Komponenten mit welche wir zum Teil auch verwendet haben.
+Dazu zählen z.B. die Tabs auf den Unterseiten, Buttons oder aber auch die Seitenweite Footer Navigation.
+Wir versuchten uns zum größten Teil an der Material Design Spec zu orientierne da sie intuitiv und gut spezifiziert ist und gleich ein nutzungserlebnis bietet bei dem man als
+Besucher nicht viel über Gewisse Abläufe nachdenken muss. Eine genaue Dokumentation dazu findet man hier: https://material.io/design/
+
+
+Den Dark Mode verwenden wir da der durchschnittliche Meme Platform Nutzer eher auf einen Dark Mode zurückgreift und wir dieses Muster direkt abfangen wollen.
