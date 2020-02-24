@@ -1,0 +1,24 @@
+Motivation und Themenwahl:
+
+Memes als populäres und wachsendes Phänomen. 
+Multimedialer Charakter des Phänomens daher passend zur Aufgabenstellung.
+Nicht zu letzt Bezug zum medialen Alltag der Gruppe.
+
+
+technische Aspekte und Betrachtungen:
+
+Nutzung von Quasar 
+-->als UI Design Richlinie
+Design: schlicht wegen Übersichtlichkeit, Dunkel wegen Lesbarkeit
+Darkmode ein/aus
+
+
+Anteile der Gruppenmitglieder:
+
+	Joost: technische Planung, Texte 
+
+	Kalb: redaktionelle Planung, Texte 
+
+	Siegert: redaktionelle Planung, Texte
+
+	alle: technische Umsetzung
